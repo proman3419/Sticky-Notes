@@ -204,7 +204,7 @@
             <TextBox Height="auto" Background="{StaticResource WindowCol}" 
                      FontSize="{Binding Source={x:Static properties:Settings.Default},
                      Path=fontSize}" BorderThickness="0" TextWrapping="Wrap"
-                     Padding="5,2,5,2" Name="IOField"></TextBox>
+                     Padding="5,2,5,2" AcceptsReturn="True" Name="IOField"></TextBox>
         </Grid>
         <!--#endregion-->
 

@@ -1,16 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.IO;
 
 namespace Sticky_Notes
@@ -27,11 +18,20 @@ namespace Sticky_Notes
         public MainWindow()
         {
             InitializeComponent();
+            Setup();
+        }
 
+        private void Setup()
+        {
+            // If the program has shut down unexpectedly and the settings window has been opened
+            // without this step the program would be unable to open settings window 
+            if (Properties.Settings.Default.isSettingsWindowOpened)
+                Properties.Settings.Default.isSettingsWindowOpened = false;
             SetSavePath();
             // If no notes have been loaded add a default one
             if (!LoadNotes())
             {
+                // Add a default note
                 notes.Add(new Note(++maxId));
                 currentId++;
             }
@@ -40,7 +40,7 @@ namespace Sticky_Notes
         private void SetSavePath()
         {
             string currentPath = Properties.Settings.Default.savePath;
-            if (String.IsNullOrEmpty(currentPath) || !Directory.Exists(currentPath))
+            if (string.IsNullOrEmpty(currentPath) || !Directory.Exists(currentPath))
             {
                 string defaultPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "Sticky Notes");
                 
@@ -80,6 +80,11 @@ namespace Sticky_Notes
         #region Buttons
         private void SettingsButton_Click(object sender, RoutedEventArgs e)
         {
+            if (!Properties.Settings.Default.isSettingsWindowOpened)
+            {
+                new Settings().Show();
+                Properties.Settings.Default.isSettingsWindowOpened = true;
+            }
         }
 
         private void ExitButton_Click(object sender, RoutedEventArgs e)
@@ -112,10 +117,10 @@ namespace Sticky_Notes
 
         private void DeleteButton_Click(object sender, RoutedEventArgs e)
         {
+            notes[currentId].Delete();
+            notes.RemoveAt(currentId);
             if (maxId > 0)
             {
-                notes[currentId].Delete();
-                notes.RemoveAt(currentId);
                 for (int i = currentId; i < maxId; i++)
                     notes[i].Id--;
                 maxId--;
@@ -127,7 +132,10 @@ namespace Sticky_Notes
                 UpdateCounter();
             }
             else
+            {                
+                notes.Add(new Note(maxId));
                 IOField.Text = "";
+            }
         }
 
         private void AddButton_Click(object sender, RoutedEventArgs e)

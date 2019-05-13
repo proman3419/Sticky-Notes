@@ -13,3 +13,5 @@ C:\Users\przemek\Documents\git\Sticky Notes\Sticky Notes\obj\Debug\Sticky Notes.
 C:\Users\przemek\Documents\git\Sticky Notes\Sticky Notes\obj\Debug\Sticky_Notes.Properties.Resources.resources
 C:\Users\przemek\Documents\git\Sticky Notes\Sticky Notes\obj\Debug\Sticky Notes.csproj.GenerateResource.cache
 C:\Users\przemek\Documents\git\Sticky Notes\Sticky Notes\obj\Debug\Sticky Notes.csproj.CoreCompileInputs.cache
+C:\Users\przemek\Documents\git\Sticky Notes\Sticky Notes\obj\Debug\Settings.g.cs
+C:\Users\przemek\Documents\git\Sticky Notes\Sticky Notes\obj\Debug\Settings.baml

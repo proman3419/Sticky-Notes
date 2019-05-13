@@ -46,5 +46,17 @@ namespace Sticky_Notes.Properties {
                 this["fontSize"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool isSettingsWindowOpened {
+            get {
+                return ((bool)(this["isSettingsWindowOpened"]));
+            }
+            set {
+                this["isSettingsWindowOpened"] = value;
+            }
+        }
     }
 }
