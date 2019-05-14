@@ -2,8 +2,14 @@
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:Sticky_Notes"
-             StartupUri="MainWindow.xaml">
+             StartupUri="Resources\Code\Windows\MainWindow.xaml">
     <Application.Resources>
-         
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Resources\Code\XAML Resources\ColorsResources.xaml" />
+                <ResourceDictionary Source="Resources\Code\XAML Resources\ImagesResources.xaml" />
+                <ResourceDictionary Source="Resources\Code\XAML Resources\StylesResources.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>

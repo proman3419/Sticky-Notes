@@ -1,0 +1,12 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:Sticky_Notes">
+
+    <!--p - primary; s - secondary; t - teritary-->
+    <Brush x:Key="YellowCol_p">#fffdaa</Brush>
+    <Brush x:Key="YellowCol_s">#fffc8e</Brush>
+    <Brush x:Key="YellowCol_t">#fff37a</Brush>
+    <!--Exit, delete color = #fc5555-->
+    <!--Add color = #01a62f-->
+    <!--Direction, settings color = #2eaeff-->
+</ResourceDictionary>

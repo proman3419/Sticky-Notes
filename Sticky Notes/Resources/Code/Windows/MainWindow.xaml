@@ -1,0 +1,73 @@
+﻿<Window x:Class="Sticky_Notes.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Sticky_Notes"
+        xmlns:properties="clr-namespace:Sticky_Notes.Properties"
+        mc:Ignorable="d"
+        Title="Sticky Notes" Height="350" Width="525" MinWidth="210" MinHeight="190" WindowStyle="None" 
+        AllowsTransparency="True" ResizeMode="CanResizeWithGrip" Background="{DynamicResource YellowCol_p}"
+        Icon="{StaticResource Icon}">
+
+    <Grid>
+        <!--#region 3 Main Rows-->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="25"></RowDefinition>
+        </Grid.RowDefinitions>
+        <!--#endregion-->
+
+        <!--#region Upper Panel (1st row)-->
+        <Grid Grid.Row="0" Name="FirstRow"  Background="{StaticResource YellowCol_s}">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="25"></ColumnDefinition>
+                <ColumnDefinition Width="25"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Rectangle Fill="{StaticResource YellowCol_s}" Mouse.MouseDown="Rectangle_MouseDown"></Rectangle>
+            <TextBlock Grid.Column="0" FontSize="14" Padding="3,0,0,0"
+                       HorizontalAlignment="Left" VerticalAlignment="Center"
+                       Focusable="False" Cursor="Arrow" Text="Sticky Notes"/>
+            <Button Grid.Column="1" Style="{StaticResource SettingsButton}" 
+                    Name="SettingsButton" Click="SettingsButton_Click"></Button>
+            <Button Grid.Column="2" Style="{StaticResource ExitButton}" 
+                    Name="ExitButton" Click="ExitButton_Click"></Button>
+        </Grid>
+        <!--#endregion-->
+
+        <!--#region Input Field (2nd row)-->
+        <Grid Grid.Row="1" FocusManager.FocusedElement="{Binding ElementName=InputField}">
+            <TextBox Height="auto" Background="{StaticResource YellowCol_p}" 
+                     FontSize="{Binding Source={x:Static properties:Settings.Default},
+                     Path=fontSize}" Padding="5,2,5,2" BorderThickness="0"
+                     TextWrapping="Wrap" AcceptsReturn="True" Name="IOField"></TextBox>
+        </Grid>
+        <!--#endregion-->
+
+        <!--#region Lower Panel (3rd row)-->
+        <Grid Grid.Row="2" Background="{StaticResource YellowCol_s}">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="25"></ColumnDefinition>
+                <ColumnDefinition Width="25"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="25"></ColumnDefinition>
+                <ColumnDefinition Width="25"></ColumnDefinition>
+                <ColumnDefinition Width="12"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <TextBlock Grid.Column="2" FontSize="17" Padding="3,0,0,0"
+                       HorizontalAlignment="Center" VerticalAlignment="Center" 
+                       Text="1/1" Name="Counter"></TextBlock>
+            <!--#region Buttons-->
+            <Button Grid.Column="0" Style="{StaticResource DeleteButton}" Name="DeleteButton" Click="DeleteButton_Click"></Button>
+            <Button Grid.Column="1" Style="{StaticResource AddButton}" Name="AddButton" Click="AddButton_Click"></Button>
+            <Button Grid.Column="3" Style="{StaticResource PreviousButton}" Name="PreviousButton" Click="PreviousButton_Click"></Button>
+            <Button Grid.Column="4" Style="{StaticResource NextButton}" Name="NextButton" Click="NextButton_Click"></Button>
+            <!--#endregion-->
+        </Grid>
+        <!--#endregion-->
+    </Grid>
+</Window>

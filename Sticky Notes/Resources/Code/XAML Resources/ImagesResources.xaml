@@ -1,0 +1,18 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:Sticky_Notes">
+
+    <ImageSource x:Key="Icon">..\..\Graphics\icon.png</ImageSource>
+    <ImageSource x:Key="ExitButtonImg">..\..\Graphics\exit.png</ImageSource>
+    <ImageSource x:Key="ExitButtonImg2">..\..\Graphics\exit2.png</ImageSource>
+    <ImageSource x:Key="DeleteButtonImg">..\..\Graphics\delete.png</ImageSource>
+    <ImageSource x:Key="DeleteButtonImg2">..\..\Graphics\delete2.png</ImageSource>
+    <ImageSource x:Key="AddButtonImg">..\..\Graphics\add.png</ImageSource>
+    <ImageSource x:Key="AddButtonImg2">..\..\Graphics\add2.png</ImageSource>
+    <ImageSource x:Key="PreviousButtonImg">..\..\Graphics\previous.png</ImageSource>
+    <ImageSource x:Key="PreviousButtonImg2">..\..\Graphics\previous2.png</ImageSource>
+    <ImageSource x:Key="NextButtonImg">..\..\Graphics\next.png</ImageSource>
+    <ImageSource x:Key="NextButtonImg2">..\..\Graphics\next2.png</ImageSource>
+    <ImageSource x:Key="SettingsButtonImg">..\..\Graphics\settings.png</ImageSource>
+    <ImageSource x:Key="SettingsButtonImg2">..\..\Graphics\settings2.png</ImageSource>
+</ResourceDictionary>

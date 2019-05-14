@@ -1,5 +1,4 @@
 C:\Users\przemek\Documents\git\Sticky Notes\Sticky Notes\obj\Debug\Sticky Notes.csprojAssemblyReference.cache
-C:\Users\przemek\Documents\git\Sticky Notes\Sticky Notes\obj\Debug\MainWindow.g.cs
 C:\Users\przemek\Documents\git\Sticky Notes\Sticky Notes\obj\Debug\App.g.cs
 C:\Users\przemek\Documents\git\Sticky Notes\Sticky Notes\obj\Debug\Sticky Notes_MarkupCompile.cache
 C:\Users\przemek\Documents\git\Sticky Notes\Sticky Notes\obj\Debug\Sticky Notes_MarkupCompile.lref
@@ -8,10 +7,15 @@ C:\Users\przemek\Documents\git\Sticky Notes\Sticky Notes\obj\Debug\Sticky Notes.
 C:\Users\przemek\Documents\git\Sticky Notes\Sticky Notes\bin\Debug\Sticky Notes.exe.config
 C:\Users\przemek\Documents\git\Sticky Notes\Sticky Notes\bin\Debug\Sticky Notes.exe
 C:\Users\przemek\Documents\git\Sticky Notes\Sticky Notes\bin\Debug\Sticky Notes.pdb
-C:\Users\przemek\Documents\git\Sticky Notes\Sticky Notes\obj\Debug\MainWindow.baml
 C:\Users\przemek\Documents\git\Sticky Notes\Sticky Notes\obj\Debug\Sticky Notes.g.resources
 C:\Users\przemek\Documents\git\Sticky Notes\Sticky Notes\obj\Debug\Sticky_Notes.Properties.Resources.resources
 C:\Users\przemek\Documents\git\Sticky Notes\Sticky Notes\obj\Debug\Sticky Notes.csproj.GenerateResource.cache
 C:\Users\przemek\Documents\git\Sticky Notes\Sticky Notes\obj\Debug\Sticky Notes.csproj.CoreCompileInputs.cache
-C:\Users\przemek\Documents\git\Sticky Notes\Sticky Notes\obj\Debug\Settings.g.cs
-C:\Users\przemek\Documents\git\Sticky Notes\Sticky Notes\obj\Debug\Settings.baml
+C:\Users\przemek\Documents\git\Sticky Notes\Sticky Notes\obj\Debug\App.baml
+C:\Users\przemek\Documents\git\Sticky Notes\Sticky Notes\obj\Debug\Resources\Code\Windows\MainWindow.g.cs
+C:\Users\przemek\Documents\git\Sticky Notes\Sticky Notes\obj\Debug\Resources\Code\Windows\Settings.g.cs
+C:\Users\przemek\Documents\git\Sticky Notes\Sticky Notes\obj\Debug\Resources\Code\XAML Resources\ColorsResources.baml
+C:\Users\przemek\Documents\git\Sticky Notes\Sticky Notes\obj\Debug\Resources\Code\XAML Resources\ImagesResources.baml
+C:\Users\przemek\Documents\git\Sticky Notes\Sticky Notes\obj\Debug\Resources\Code\XAML Resources\StylesResources.baml
+C:\Users\przemek\Documents\git\Sticky Notes\Sticky Notes\obj\Debug\Resources\Code\Windows\MainWindow.baml
+C:\Users\przemek\Documents\git\Sticky Notes\Sticky Notes\obj\Debug\Resources\Code\Windows\Settings.baml
