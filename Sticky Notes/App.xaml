@@ -9,6 +9,7 @@
                 <ResourceDictionary Source="Resources\Code\XAML Resources\ColorsResources.xaml" />
                 <ResourceDictionary Source="Resources\Code\XAML Resources\ImagesResources.xaml" />
                 <ResourceDictionary Source="Resources\Code\XAML Resources\StylesResources.xaml" />
+                <ResourceDictionary Source="Resources\Code\Themes\Yellow.xaml" />
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>

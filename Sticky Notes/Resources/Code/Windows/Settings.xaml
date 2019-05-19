@@ -6,9 +6,9 @@
         xmlns:local="clr-namespace:Sticky_Notes"
         xmlns:properties="clr-namespace:Sticky_Notes.Properties"
         mc:Ignorable="d"
-        Title="Settings" Height="225" Width="275" MinWidth="210" MinHeight="150"
+        Title="Settings" Height="280" Width="250" MinWidth="210" MinHeight="150"
         WindowStyle="None" ResizeMode="NoResize"
-        AllowsTransparency="True" Background="{DynamicResource YellowCol_s}">
+        AllowsTransparency="True" Background="{DynamicResource SecondaryCol}">
 
     <Grid>
         <!--#region 3 Main Rows-->
@@ -26,7 +26,7 @@
                 <ColumnDefinition Width="25"></ColumnDefinition>
             </Grid.ColumnDefinitions>
 
-            <Rectangle Fill="{StaticResource YellowCol_s}" Mouse.MouseDown="Rectangle_MouseDown"></Rectangle>
+            <Rectangle Fill="{DynamicResource SecondaryCol}" Mouse.MouseDown="Rectangle_MouseDown"></Rectangle>
             <TextBlock Grid.Column="0" Text="Settings" 
                        Focusable="False" Cursor="Arrow" HorizontalAlignment="Left"
                        VerticalAlignment="Center" Padding="3,0,0,0"
@@ -46,20 +46,54 @@
                     <RowDefinition Height="0.2*"></RowDefinition>
                     <RowDefinition Height="0.4*"></RowDefinition>
                     <RowDefinition Height="0.4*"></RowDefinition>
+                    <RowDefinition Height="0.2*"></RowDefinition>
+                    <RowDefinition Height="0.4*"></RowDefinition>
+                    <RowDefinition Height="0.4*"></RowDefinition>
                     <RowDefinition Height="0.6*"></RowDefinition>
                 </Grid.RowDefinitions>
 
                 <TextBlock Grid.Row="1" Style="{StaticResource SettingsWindowTextBlock}"
                            Text="Save folder"></TextBlock>
-                <!-- The spaces in the Conent property below are intended, they're used as a padding-->
+                <!--The spacing is intentional, it serves as padding-->
                 <Button Grid.Row="2" Style="{StaticResource SettingsWindowButton}" 
                         Content="  Choose folder  " 
                         Name="PathButton" Click="PathButton_Click"></Button>
+                
                 <TextBlock Grid.Row="4" Style="{StaticResource SettingsWindowTextBlock}" 
                            Text="Font size"></TextBlock>
-                <TextBox Grid.Row="5" Style="{StaticResource SettingsWindowTextBox}" 
+                <TextBox Grid.Row="5" Style="{StaticResource SettingsWindowTextBox}"
                          Text="{Binding Source={x:Static properties:Settings.Default}, Path=fontSize}"                 
-                         Name="FontSizeInput" TextChanged="FontSizeInput_TextChanged" Margin="1,0,-1,0"></TextBox>
+                         Name="FontSizeInput" TextChanged="FontSizeInput_TextChanged"></TextBox>
+
+                <TextBlock Grid.Row="7" Style="{StaticResource SettingsWindowTextBlock}"
+                           Text="Color scheme"></TextBlock>
+                <Grid Grid.Row="8">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+
+                        <Button Grid.Column="0" Style="{StaticResource SettingsWindowColorButton}"
+                                Background="{StaticResource YellowCol}"
+                                Tag="Yellow" Click="ColorButton_Click"></Button>
+                        <Button Grid.Column="1" Style="{StaticResource SettingsWindowColorButton}"
+                                Background="{StaticResource OrangeCol}"
+                                Tag="Orange" Click="ColorButton_Click"></Button>
+                        <Button Grid.Column="2" Style="{StaticResource SettingsWindowColorButton}"
+                                Background="{StaticResource PurpleCol}"
+                                Tag="Purple" Click="ColorButton_Click"></Button>
+                        <Button Grid.Column="3" Style="{StaticResource SettingsWindowColorButton}"
+                                Background="{StaticResource BlueCol}"
+                                Tag="Blue" Click="ColorButton_Click"></Button>
+                        <Button Grid.Column="4" Style="{StaticResource SettingsWindowColorButton}"
+                                Background="{StaticResource GreenCol}"
+                                Tag="Green" Click="ColorButton_Click"></Button>
+                    </Grid>
+                </Grid>
             </Grid>
         </Grid>
         <!--#endregion-->

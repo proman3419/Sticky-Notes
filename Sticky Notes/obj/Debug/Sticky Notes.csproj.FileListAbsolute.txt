@@ -19,3 +19,8 @@ C:\Users\przemek\Documents\git\Sticky Notes\Sticky Notes\obj\Debug\Resources\Cod
 C:\Users\przemek\Documents\git\Sticky Notes\Sticky Notes\obj\Debug\Resources\Code\XAML Resources\StylesResources.baml
 C:\Users\przemek\Documents\git\Sticky Notes\Sticky Notes\obj\Debug\Resources\Code\Windows\MainWindow.baml
 C:\Users\przemek\Documents\git\Sticky Notes\Sticky Notes\obj\Debug\Resources\Code\Windows\Settings.baml
+C:\Users\przemek\Documents\git\Sticky Notes\Sticky Notes\obj\Debug\Resources\Code\Themes\Green.baml
+C:\Users\przemek\Documents\git\Sticky Notes\Sticky Notes\obj\Debug\Resources\Code\Themes\Yellow.baml
+C:\Users\przemek\Documents\git\Sticky Notes\Sticky Notes\obj\Debug\Resources\Code\Themes\Blue.baml
+C:\Users\przemek\Documents\git\Sticky Notes\Sticky Notes\obj\Debug\Resources\Code\Themes\Orange.baml
+C:\Users\przemek\Documents\git\Sticky Notes\Sticky Notes\obj\Debug\Resources\Code\Themes\Purple.baml

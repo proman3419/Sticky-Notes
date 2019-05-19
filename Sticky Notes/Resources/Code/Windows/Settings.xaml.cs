@@ -1,5 +1,6 @@
 ﻿using System.Windows;
 using System.Windows.Forms;
+using System.Windows.Controls;
 
 namespace Sticky_Notes
 {
@@ -31,25 +32,43 @@ namespace Sticky_Notes
             }
         }
 
-        private void Save_Click(object sender, RoutedEventArgs e)
+        private void ColorButton_Click(object sender, RoutedEventArgs e)
         {
-
+            Properties.Settings.Default.theme = ((System.Windows.Controls.Button)sender).Tag.ToString();
+            Properties.Settings.Default.Save();
+            MainWindow.UpdateTheme();
         }
         #endregion
 
         #region OnTextChange
         private void FontSizeInput_TextChanged(object sender, System.Windows.Controls.TextChangedEventArgs e)
         {
+            ValidateFontSizeInput(FontSizeInput, 100, "fontSize");
+        }
+        #endregion
+
+        #region Compositional functions
+        private void ValidateFontSizeInput(System.Windows.Controls.TextBox inputField, int maxFontSize, string propertiesVariableName)
+        {
             int newFontSize;
-            if (int.TryParse(FontSizeInput.Text, out newFontSize))
+            if (int.TryParse(inputField.Text, out newFontSize))
             {
-                if (0 < newFontSize && newFontSize < 100)
+                if (0 < newFontSize && newFontSize <= maxFontSize)
                 {
-                    Properties.Settings.Default.fontSize = newFontSize;
-                    Properties.Settings.Default.Save();
+                    switch (propertiesVariableName)
+                    {
+                        case "fontSize":
+                            Properties.Settings.Default.fontSize = newFontSize; break;
+                        case "interfaceFontSize":
+                            Properties.Settings.Default.defaultFontSize = newFontSize; break;
+                    }
                 }
                 else
-                    System.Windows.MessageBox.Show("Font size: 1-99 values allowed", "Warning!", MessageBoxButton.OK, MessageBoxImage.Error);
+                {
+                    System.Windows.MessageBox.Show(string.Format("1-{0} values allowed", maxFontSize), "Warning!", MessageBoxButton.OK, MessageBoxImage.Error);
+                    Properties.Settings.Default.fontSize = Properties.Settings.Default.defaultFontSize;
+                }
+                Properties.Settings.Default.Save();
             }
         }
         #endregion

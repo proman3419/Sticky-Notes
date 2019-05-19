@@ -1,0 +1,8 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:Sticky_Notes.Resources.Code.Themes">
+    
+    <Brush x:Key="PrimaryCol">#fffdaa</Brush>
+    <Brush x:Key="SecondaryCol">#fffc8e</Brush>
+    <Brush x:Key="TeritaryCol">#fff37a</Brush>
+</ResourceDictionary>

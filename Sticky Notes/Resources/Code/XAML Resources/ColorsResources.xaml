@@ -2,11 +2,20 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:local="clr-namespace:Sticky_Notes">
 
-    <!--p - primary; s - secondary; t - teritary-->
-    <Brush x:Key="YellowCol_p">#fffdaa</Brush>
-    <Brush x:Key="YellowCol_s">#fffc8e</Brush>
-    <Brush x:Key="YellowCol_t">#fff37a</Brush>
     <!--Exit, delete color = #fc5555-->
     <!--Add color = #01a62f-->
     <!--Direction, settings color = #2eaeff-->
+    
+    <!--The default theme is the yellow one-->
+    <Brush x:Key="PrimaryCol">#fffdaa</Brush>
+    <Brush x:Key="SecondaryCol">#fffc8e</Brush>
+    <Brush x:Key="TeritaryCol">#fff37a</Brush>
+    
+    <!--#region Themes colors for buttons-->
+    <Brush x:Key="YellowCol">#fffdaa</Brush>
+    <Brush x:Key="OrangeCol">#ffe9a8</Brush>
+    <Brush x:Key="PurpleCol">#dda8ff</Brush>
+    <Brush x:Key="BlueCol">#a8d0ff</Brush>
+    <Brush x:Key="GreenCol">#90ff70</Brush>
+    <!--#endregion-->
 </ResourceDictionary>

@@ -37,13 +37,25 @@ namespace Sticky_Notes.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("16")]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
         public int fontSize {
             get {
                 return ((int)(this["fontSize"]));
             }
             set {
                 this["fontSize"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("16")]
+        public int defaultFontSize {
+            get {
+                return ((int)(this["defaultFontSize"]));
+            }
+            set {
+                this["defaultFontSize"] = value;
             }
         }
         
@@ -56,6 +68,18 @@ namespace Sticky_Notes.Properties {
             }
             set {
                 this["isSettingsWindowOpened"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Yellow")]
+        public string theme {
+            get {
+                return ((string)(this["theme"]));
+            }
+            set {
+                this["theme"] = value;
             }
         }
     }
