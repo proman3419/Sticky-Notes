@@ -2,7 +2,11 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:local="clr-namespace:Sticky_Notes.Resources.Code.Themes">
 
-    <Brush x:Key="PrimaryCol">#dda8ff</Brush>
-    <Brush x:Key="SecondaryCol">#d189ff</Brush>
-    <Brush x:Key="TeritaryCol">#c66dff</Brush>
+    <Color x:Key="PrimaryCol">#dda8ff</Color>
+    <Color x:Key="SecondaryCol">#d189ff</Color>
+    <Color x:Key="TeritaryCol">#c66dff</Color>
+    
+    <Brush x:Key="PrimaryBr">#dda8ff</Brush>
+    <Brush x:Key="SecondaryBr">#d189ff</Brush>
+    <Brush x:Key="TeritaryBr">#c66dff</Brush>
 </ResourceDictionary>

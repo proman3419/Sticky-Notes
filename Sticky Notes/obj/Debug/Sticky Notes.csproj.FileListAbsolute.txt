@@ -14,9 +14,6 @@ C:\Users\przemek\Documents\git\Sticky Notes\Sticky Notes\obj\Debug\Sticky Notes.
 C:\Users\przemek\Documents\git\Sticky Notes\Sticky Notes\obj\Debug\App.baml
 C:\Users\przemek\Documents\git\Sticky Notes\Sticky Notes\obj\Debug\Resources\Code\Windows\MainWindow.g.cs
 C:\Users\przemek\Documents\git\Sticky Notes\Sticky Notes\obj\Debug\Resources\Code\Windows\Settings.g.cs
-C:\Users\przemek\Documents\git\Sticky Notes\Sticky Notes\obj\Debug\Resources\Code\XAML Resources\ColorsResources.baml
-C:\Users\przemek\Documents\git\Sticky Notes\Sticky Notes\obj\Debug\Resources\Code\XAML Resources\ImagesResources.baml
-C:\Users\przemek\Documents\git\Sticky Notes\Sticky Notes\obj\Debug\Resources\Code\XAML Resources\StylesResources.baml
 C:\Users\przemek\Documents\git\Sticky Notes\Sticky Notes\obj\Debug\Resources\Code\Windows\MainWindow.baml
 C:\Users\przemek\Documents\git\Sticky Notes\Sticky Notes\obj\Debug\Resources\Code\Windows\Settings.baml
 C:\Users\przemek\Documents\git\Sticky Notes\Sticky Notes\obj\Debug\Resources\Code\Themes\Green.baml
@@ -24,3 +21,8 @@ C:\Users\przemek\Documents\git\Sticky Notes\Sticky Notes\obj\Debug\Resources\Cod
 C:\Users\przemek\Documents\git\Sticky Notes\Sticky Notes\obj\Debug\Resources\Code\Themes\Blue.baml
 C:\Users\przemek\Documents\git\Sticky Notes\Sticky Notes\obj\Debug\Resources\Code\Themes\Orange.baml
 C:\Users\przemek\Documents\git\Sticky Notes\Sticky Notes\obj\Debug\Resources\Code\Themes\Purple.baml
+C:\Users\przemek\Documents\git\Sticky Notes\Sticky Notes\obj\Debug\Resources\Code\XAML Resources\Images.baml
+C:\Users\przemek\Documents\git\Sticky Notes\Sticky Notes\obj\Debug\Resources\Code\XAML Resources\MainWindowStyles.baml
+C:\Users\przemek\Documents\git\Sticky Notes\Sticky Notes\obj\Debug\Resources\Code\XAML Resources\SettingsWindowStyles.baml
+C:\Users\przemek\Documents\git\Sticky Notes\Sticky Notes\obj\Debug\Resources\Code\XAML Resources\Styles.baml
+C:\Users\przemek\Documents\git\Sticky Notes\Sticky Notes\obj\Debug\Resources\Code\XAML Resources\Brushes.baml

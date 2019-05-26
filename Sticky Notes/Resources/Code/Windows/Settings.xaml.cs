@@ -43,7 +43,7 @@ namespace Sticky_Notes
         #region OnTextChange
         private void FontSizeInput_TextChanged(object sender, System.Windows.Controls.TextChangedEventArgs e)
         {
-            ValidateFontSizeInput(FontSizeInput, 100, "fontSize");
+            ValidateFontSizeInput(FontSizeInput, Properties.Settings.Default.maxFontSize, "fontSize");
         }
         #endregion
 
@@ -51,7 +51,7 @@ namespace Sticky_Notes
         private void ValidateFontSizeInput(System.Windows.Controls.TextBox inputField, int maxFontSize, string propertiesVariableName)
         {
             int newFontSize;
-            if (int.TryParse(inputField.Text, out newFontSize))
+            if (int.TryParse(inputField.Text, out newFontSize) && newFontSize > 0)
             {
                 if (0 < newFontSize && newFontSize <= maxFontSize)
                 {
@@ -65,11 +65,13 @@ namespace Sticky_Notes
                 }
                 else
                 {
-                    System.Windows.MessageBox.Show(string.Format("1-{0} values allowed", maxFontSize), "Warning!", MessageBoxButton.OK, MessageBoxImage.Error);
-                    Properties.Settings.Default.fontSize = Properties.Settings.Default.defaultFontSize;
+                    if (newFontSize > maxFontSize)
+                        Properties.Settings.Default.fontSize = maxFontSize;
                 }
-                Properties.Settings.Default.Save();
             }
+            else
+                Properties.Settings.Default.fontSize = Properties.Settings.Default.defaultFontSize;
+            Properties.Settings.Default.Save();
         }
         #endregion
 

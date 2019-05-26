@@ -6,9 +6,9 @@
         xmlns:local="clr-namespace:Sticky_Notes"
         xmlns:properties="clr-namespace:Sticky_Notes.Properties"
         mc:Ignorable="d"
-        Title="Settings" Height="280" Width="250" MinWidth="210" MinHeight="150"
+        Title="Settings" Height="350" Width="250" MinWidth="210" MinHeight="150"
         WindowStyle="None" ResizeMode="NoResize"
-        AllowsTransparency="True" Background="{DynamicResource SecondaryCol}">
+        AllowsTransparency="True" Background="{DynamicResource SecondaryBr}">
 
     <Grid>
         <!--#region 3 Main Rows-->
@@ -26,7 +26,7 @@
                 <ColumnDefinition Width="25"></ColumnDefinition>
             </Grid.ColumnDefinitions>
 
-            <Rectangle Fill="{DynamicResource SecondaryCol}" Mouse.MouseDown="Rectangle_MouseDown"></Rectangle>
+            <Rectangle Fill="{DynamicResource SecondaryBr}" Mouse.MouseDown="Rectangle_MouseDown"></Rectangle>
             <TextBlock Grid.Column="0" Text="Settings" 
                        Focusable="False" Cursor="Arrow" HorizontalAlignment="Left"
                        VerticalAlignment="Center" Padding="3,0,0,0"
@@ -41,6 +41,9 @@
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="0.6*"></RowDefinition>
+                    <RowDefinition Height="0.4*"></RowDefinition>
+                    <RowDefinition Height="0.4*"></RowDefinition>
+                    <RowDefinition Height="0.2*"></RowDefinition>
                     <RowDefinition Height="0.4*"></RowDefinition>
                     <RowDefinition Height="0.4*"></RowDefinition>
                     <RowDefinition Height="0.2*"></RowDefinition>
@@ -65,9 +68,18 @@
                          Text="{Binding Source={x:Static properties:Settings.Default}, Path=fontSize}"                 
                          Name="FontSizeInput" TextChanged="FontSizeInput_TextChanged"></TextBox>
 
-                <TextBlock Grid.Row="7" Style="{StaticResource SettingsWindowTextBlock}"
-                           Text="Color scheme"></TextBlock>
-                <Grid Grid.Row="8">
+                <TextBlock Grid.Row="7" Style="{StaticResource SettingsWindowTextBlock}" 
+                           Text="Font"></TextBlock>
+                <ComboBox Grid.Row="8">
+                    <ComboBoxItem>1</ComboBoxItem>
+                    <ComboBoxItem>2</ComboBoxItem>
+                    <ComboBoxItem>3</ComboBoxItem>
+                </ComboBox>
+                
+                
+                <TextBlock Grid.Row="10" Style="{StaticResource SettingsWindowTextBlock}"
+                           Text="Color theme"></TextBlock>
+                <Grid Grid.Row="11">
                     <Grid>
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="*"></ColumnDefinition>
@@ -77,20 +89,25 @@
                             <ColumnDefinition Width="*"></ColumnDefinition>
                         </Grid.ColumnDefinitions>
 
+                        <Border Grid.Column="0" Background="{DynamicResource TeritaryBr}"></Border>
                         <Button Grid.Column="0" Style="{StaticResource SettingsWindowColorButton}"
-                                Background="{StaticResource YellowCol}"
+                                Background="{StaticResource YellowBr}"
                                 Tag="Yellow" Click="ColorButton_Click"></Button>
+                        <Border Grid.Column="1" Background="{DynamicResource TeritaryBr}"></Border>
                         <Button Grid.Column="1" Style="{StaticResource SettingsWindowColorButton}"
-                                Background="{StaticResource OrangeCol}"
+                                Background="{StaticResource OrangeBr}"
                                 Tag="Orange" Click="ColorButton_Click"></Button>
+                        <Border Grid.Column="2" Background="{DynamicResource TeritaryBr}"></Border>
                         <Button Grid.Column="2" Style="{StaticResource SettingsWindowColorButton}"
-                                Background="{StaticResource PurpleCol}"
+                                Background="{StaticResource PurpleBr}"
                                 Tag="Purple" Click="ColorButton_Click"></Button>
+                        <Border Grid.Column="3" Background="{DynamicResource TeritaryBr}"></Border>
                         <Button Grid.Column="3" Style="{StaticResource SettingsWindowColorButton}"
-                                Background="{StaticResource BlueCol}"
+                                Background="{StaticResource BlueBr}"
                                 Tag="Blue" Click="ColorButton_Click"></Button>
+                        <Border Grid.Column="4" Background="{DynamicResource TeritaryBr}"></Border>
                         <Button Grid.Column="4" Style="{StaticResource SettingsWindowColorButton}"
-                                Background="{StaticResource GreenCol}"
+                                Background="{StaticResource GreenBr}"
                                 Tag="Green" Click="ColorButton_Click"></Button>
                     </Grid>
                 </Grid>

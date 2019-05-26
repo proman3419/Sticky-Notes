@@ -7,7 +7,7 @@
         xmlns:properties="clr-namespace:Sticky_Notes.Properties"
         mc:Ignorable="d"
         Title="Sticky Notes" Height="350" Width="525" MinWidth="210" MinHeight="190" WindowStyle="None" 
-        AllowsTransparency="True" ResizeMode="CanResizeWithGrip" Background="{DynamicResource PrimaryCol}"
+        AllowsTransparency="True" ResizeMode="CanResizeWithGrip" Background="{DynamicResource PrimaryBr}"
         Icon="{StaticResource Icon}">
 
     <Grid>
@@ -20,14 +20,14 @@
         <!--#endregion-->
 
         <!--#region Upper Panel (1st row)-->
-        <Grid Grid.Row="0" Name="FirstRow"  Background="{DynamicResource SecondaryCol}">
+        <Grid Grid.Row="0" Name="FirstRow"  Background="{DynamicResource SecondaryBr}">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"></ColumnDefinition>
                 <ColumnDefinition Width="25"></ColumnDefinition>
                 <ColumnDefinition Width="25"></ColumnDefinition>
             </Grid.ColumnDefinitions>
 
-            <Rectangle Fill="{DynamicResource SecondaryCol}" Mouse.MouseDown="Rectangle_MouseDown"></Rectangle>
+            <Rectangle Fill="{DynamicResource SecondaryBr}" Mouse.MouseDown="Rectangle_MouseDown"></Rectangle>
             <TextBlock Grid.Column="0" FontSize="14" Padding="3,0,0,0"
                        HorizontalAlignment="Left" VerticalAlignment="Center"
                        Focusable="False" Cursor="Arrow" Text="Sticky Notes"/>
@@ -40,7 +40,7 @@
 
         <!--#region Input Field (2nd row)-->
         <Grid Grid.Row="1" FocusManager.FocusedElement="{Binding ElementName=InputField}">
-            <TextBox Height="auto" Background="{DynamicResource PrimaryCol}" 
+            <TextBox Height="auto" Background="{DynamicResource PrimaryBr}" 
                      FontSize="{Binding Source={x:Static properties:Settings.Default},
                      Path=fontSize}" Padding="5,2,5,2" BorderThickness="0"
                      TextWrapping="Wrap" AcceptsReturn="True" Name="IOField"></TextBox>
@@ -48,7 +48,7 @@
         <!--#endregion-->
 
         <!--#region Lower Panel (3rd row)-->
-        <Grid Grid.Row="2" Background="{DynamicResource SecondaryCol}">
+        <Grid Grid.Row="2" Background="{DynamicResource SecondaryBr}">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="25"></ColumnDefinition>
                 <ColumnDefinition Width="25"></ColumnDefinition>

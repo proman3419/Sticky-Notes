@@ -11,6 +11,9 @@
     <Setting Name="defaultFontSize" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">16</Value>
     </Setting>
+    <Setting Name="maxFontSize" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">100</Value>
+    </Setting>
     <Setting Name="isSettingsWindowOpened" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">False</Value>
     </Setting>

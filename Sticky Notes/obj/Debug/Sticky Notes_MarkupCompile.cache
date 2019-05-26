@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\przemek\Documents\git\Sticky Notes\Sticky Notes\App.xaml
-10-299810639
+12-1131704370
 
 7-21467104
 14-1290796308
-Resources\Code\Themes\Blue.xaml;Resources\Code\Themes\Green.xaml;Resources\Code\Themes\Orange.xaml;Resources\Code\Themes\Purple.xaml;Resources\Code\Themes\Yellow.xaml;Resources\Code\XAML Resources\ColorsResources.xaml;Resources\Code\XAML Resources\ImagesResources.xaml;Resources\Code\XAML Resources\StylesResources.xaml;Resources\Code\Windows\MainWindow.xaml;Resources\Code\Windows\Settings.xaml;
+Resources\Code\Themes\Blue.xaml;Resources\Code\Themes\Green.xaml;Resources\Code\Themes\Orange.xaml;Resources\Code\Themes\Purple.xaml;Resources\Code\Themes\Yellow.xaml;Resources\Code\XAML Resources\Brushes.xaml;Resources\Code\XAML Resources\Images.xaml;Resources\Code\XAML Resources\MainWindowStyles.xaml;Resources\Code\XAML Resources\SettingsWindowStyles.xaml;Resources\Code\XAML Resources\Styles.xaml;Resources\Code\Windows\MainWindow.xaml;Resources\Code\Windows\Settings.xaml;
 
 False
 

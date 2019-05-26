@@ -163,7 +163,7 @@ namespace Sticky_Notes
         public static void UpdateTheme()
         {
             // It must be the same id as in App.xaml
-            int themeResourceDictionaryId = 3;
+            int themeResourceDictionaryId = 5;
             Application.Current.Resources.MergedDictionaries[themeResourceDictionaryId] =
                 new ResourceDictionary() { Source = new Uri(string.Format("Resources/Code/Themes/{0}.xaml", Properties.Settings.Default.theme), UriKind.Relative) };
         }
