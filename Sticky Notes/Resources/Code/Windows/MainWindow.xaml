@@ -41,8 +41,9 @@
         <!--#region Input Field (2nd row)-->
         <Grid Grid.Row="1" FocusManager.FocusedElement="{Binding ElementName=InputField}">
             <TextBox Height="auto" Background="{DynamicResource PrimaryBr}" 
-                     FontSize="{Binding Source={x:Static properties:Settings.Default},
-                     Path=fontSize}" Padding="5,2,5,2" BorderThickness="0"
+                     FontSize="{Binding Source={x:Static properties:Settings.Default}, Path=fontSize}" 
+                     FontFamily="{Binding Source={x:Static properties:Settings.Default}, Path=font}" 
+                     Padding="5,2,5,2" BorderThickness="0"
                      TextWrapping="Wrap" AcceptsReturn="True" Name="IOField"></TextBox>
         </Grid>
         <!--#endregion-->

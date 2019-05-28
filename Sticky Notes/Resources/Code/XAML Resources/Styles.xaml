@@ -44,7 +44,4 @@
         </Style.Triggers>
     </Style>
     <!--#endregion-->
-
-    <!--#region ComboBox Style-->
-    <!--#endregion-->
 </ResourceDictionary>

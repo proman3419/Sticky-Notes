@@ -94,5 +94,17 @@ namespace Sticky_Notes.Properties {
                 this["theme"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Segoe UI")]
+        public string font {
+            get {
+                return ((string)(this["font"]));
+            }
+            set {
+                this["font"] = value;
+            }
+        }
     }
 }

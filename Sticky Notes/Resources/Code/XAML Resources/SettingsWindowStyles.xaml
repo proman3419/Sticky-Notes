@@ -32,13 +32,15 @@
     </Style>
     <!--#endregion-->
 
-    <!--#region Settings Window Color Button Style-->
-    <Style TargetType="Button" x:Key="SettingsWindowColorButton" BasedOn="{StaticResource {x:Type Button}}">
+    <!--#region Settings Window Small Button Style-->
+    <Style TargetType="Button" x:Key="SettingsWindowSmallButton" BasedOn="{StaticResource {x:Type Button}}">
         <Setter Property="Margin" Value="5"></Setter>
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type Button}">
-                    <Border Background="{TemplateBinding Background}" BorderBrush="Black" BorderThickness="1"/>
+                    <Border Background="{TemplateBinding Background}" BorderBrush="Black" BorderThickness="1">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" TextBlock.FontSize="8"></ContentPresenter>
+                    </Border>
                 </ControlTemplate>
             </Setter.Value>
         </Setter>

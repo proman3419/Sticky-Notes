@@ -38,6 +38,12 @@ namespace Sticky_Notes
             Properties.Settings.Default.Save();
             MainWindow.UpdateTheme();
         }
+
+        private void FontButton_Click(object sender, RoutedEventArgs e)
+        {
+            Properties.Settings.Default.font = ((System.Windows.Controls.Button)sender).Tag.ToString();
+            Properties.Settings.Default.Save();
+        }
         #endregion
 
         #region OnTextChange

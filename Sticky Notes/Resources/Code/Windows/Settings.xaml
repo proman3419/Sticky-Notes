@@ -9,7 +9,7 @@
         Title="Settings" Height="350" Width="250" MinWidth="210" MinHeight="150"
         WindowStyle="None" ResizeMode="NoResize"
         AllowsTransparency="True" Background="{DynamicResource SecondaryBr}">
-
+    
     <Grid>
         <!--#region 3 Main Rows-->
         <Grid.RowDefinitions>
@@ -70,13 +70,34 @@
 
                 <TextBlock Grid.Row="7" Style="{StaticResource SettingsWindowTextBlock}" 
                            Text="Font"></TextBlock>
-                <ComboBox Grid.Row="8">
-                    <ComboBoxItem>1</ComboBoxItem>
-                    <ComboBoxItem>2</ComboBoxItem>
-                    <ComboBoxItem>3</ComboBoxItem>
-                </ComboBox>
-                
-                
+                <Grid Grid.Row="8">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+
+                        <Border Grid.Column="0" Background="{DynamicResource TeritaryBr}"></Border>
+                        <Button Grid.Column="0" Style="{StaticResource SettingsWindowSmallButton}"
+                                Content="A" Tag="Segoe UI" Click="FontButton_Click"></Button>
+                        <Border Grid.Column="1" Background="{DynamicResource TeritaryBr}"></Border>
+                        <Button Grid.Column="1" Style="{StaticResource SettingsWindowSmallButton}"
+                                Content="B" Tag="Arial" Click="FontButton_Click"></Button>
+                        <Border Grid.Column="2" Background="{DynamicResource TeritaryBr}"></Border>
+                        <Button Grid.Column="2" Style="{StaticResource SettingsWindowSmallButton}"
+                                Content="C" Tag="Times New Roman" Click="FontButton_Click"></Button>
+                        <Border Grid.Column="3" Background="{DynamicResource TeritaryBr}"></Border>
+                        <Button Grid.Column="3" Style="{StaticResource SettingsWindowSmallButton}"
+                                Content="D" Tag="Courier New" Click="FontButton_Click"></Button>
+                        <Border Grid.Column="4" Background="{DynamicResource TeritaryBr}"></Border>
+                        <Button Grid.Column="4" Style="{StaticResource SettingsWindowSmallButton}"
+                                Content="E" Tag="Comic Sans MS" Click="FontButton_Click"></Button>
+                    </Grid>
+                </Grid>
+
                 <TextBlock Grid.Row="10" Style="{StaticResource SettingsWindowTextBlock}"
                            Text="Color theme"></TextBlock>
                 <Grid Grid.Row="11">
@@ -90,23 +111,23 @@
                         </Grid.ColumnDefinitions>
 
                         <Border Grid.Column="0" Background="{DynamicResource TeritaryBr}"></Border>
-                        <Button Grid.Column="0" Style="{StaticResource SettingsWindowColorButton}"
+                        <Button Grid.Column="0" Style="{StaticResource SettingsWindowSmallButton}"
                                 Background="{StaticResource YellowBr}"
                                 Tag="Yellow" Click="ColorButton_Click"></Button>
                         <Border Grid.Column="1" Background="{DynamicResource TeritaryBr}"></Border>
-                        <Button Grid.Column="1" Style="{StaticResource SettingsWindowColorButton}"
+                        <Button Grid.Column="1" Style="{StaticResource SettingsWindowSmallButton}"
                                 Background="{StaticResource OrangeBr}"
                                 Tag="Orange" Click="ColorButton_Click"></Button>
                         <Border Grid.Column="2" Background="{DynamicResource TeritaryBr}"></Border>
-                        <Button Grid.Column="2" Style="{StaticResource SettingsWindowColorButton}"
+                        <Button Grid.Column="2" Style="{StaticResource SettingsWindowSmallButton}"
                                 Background="{StaticResource PurpleBr}"
                                 Tag="Purple" Click="ColorButton_Click"></Button>
                         <Border Grid.Column="3" Background="{DynamicResource TeritaryBr}"></Border>
-                        <Button Grid.Column="3" Style="{StaticResource SettingsWindowColorButton}"
+                        <Button Grid.Column="3" Style="{StaticResource SettingsWindowSmallButton}"
                                 Background="{StaticResource BlueBr}"
                                 Tag="Blue" Click="ColorButton_Click"></Button>
                         <Border Grid.Column="4" Background="{DynamicResource TeritaryBr}"></Border>
-                        <Button Grid.Column="4" Style="{StaticResource SettingsWindowColorButton}"
+                        <Button Grid.Column="4" Style="{StaticResource SettingsWindowSmallButton}"
                                 Background="{StaticResource GreenBr}"
                                 Tag="Green" Click="ColorButton_Click"></Button>
                     </Grid>
