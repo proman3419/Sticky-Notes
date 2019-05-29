@@ -43,7 +43,7 @@
             <TextBox Height="auto" Background="{DynamicResource PrimaryBr}" 
                      FontSize="{Binding Source={x:Static properties:Settings.Default}, Path=fontSize}" 
                      FontFamily="{Binding Source={x:Static properties:Settings.Default}, Path=font}" 
-                     Padding="5,2,5,2" BorderThickness="0"
+                     Padding="2" BorderThickness="0"
                      TextWrapping="Wrap" AcceptsReturn="True" Name="IOField"></TextBox>
         </Grid>
         <!--#endregion-->

@@ -118,6 +118,12 @@ namespace Sticky_Notes
                 notes.Add(new Note(++maxId));
                 currentId++;
             }
+
+            // Auto save every 10 minutes
+            var dispatcherTimer = new System.Windows.Threading.DispatcherTimer();
+            dispatcherTimer.Tick += new EventHandler(SaveCurrentNote);
+            dispatcherTimer.Interval = new TimeSpan(0, 10, 0);
+            dispatcherTimer.Start();
         }
 
         private void SetSavePath()
@@ -153,6 +159,11 @@ namespace Sticky_Notes
                 return true;
             }
             return false;
+        }
+
+        private void SaveCurrentNote(object sender, EventArgs e)
+        {
+            notes[currentId].Save(IOField);
         }
 
         private void UpdateCounter()
